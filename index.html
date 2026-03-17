@@ -4,22 +4,31 @@
   <meta charset="UTF-8">
   <title>Remember the Order</title>
   <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      overflow: hidden;
-    }
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: sans-serif;
+  }
 
-    iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border: none;
-    }
-  </style>
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  iframe {
+    flex: 1; /* takes all remaining space */
+    width: 100%;
+    border: none;
+  }
+
+  footer {
+    background: #eee;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+  }
+</style>
 </head>
 <body>
 
@@ -30,7 +39,9 @@
         frameborder="0">
 </iframe>
 <footer>
-  <p>Game from:</p><a>https://scratch.mit.edu/projects/1285293243/</a>
+  <p>Game from:</p><a href="https://scratch.mit.edu/projects/1285293243/" target="_blank">
+  https://scratch.mit.edu/projects/1285293243/
+</a>
   <p>Made by me. Game does not save when refreshing the page.</p>
 </footer>
 
